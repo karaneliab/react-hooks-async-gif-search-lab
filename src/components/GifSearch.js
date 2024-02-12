@@ -10,15 +10,18 @@ function GifSearch({ onFormSubmit }) {
   };
 
   return (
+    <div>
     <form onSubmit={handleSubmit}>
       <input
         type="text"
+        className='form-group'
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Search for GIFs"
       />
-      <button type="submit">Search GIFs</button>
+      <button type="submit" className='btn btn-success'>Search GIFs</button>
     </form>
+    </div>
   );
 }
 

@@ -31,7 +31,7 @@ function GifListContainer() {
   };
 
   return (
-    <div>
+    <div className="container">
       <GifSearch onFormSubmit={handleSearchSubmit} />
       <GifList gifs={gifs} />
     </div>
